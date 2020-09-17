@@ -12,7 +12,17 @@
 	});
 
 	require_once'inc/connexion.php';
-	?>
+
+	$categorieManager = new CategorieManager($bdd);
+	$categorie = new Categorie (['type' => 'FPS']);
+
+
+
+
+
+
+
+?>	
 
 </body>
 </html>
