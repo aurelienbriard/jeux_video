@@ -25,16 +25,24 @@ class Editeur {
   // ***************************************************************************
 
   // ****************************** Les setters ***********************************
-  public function setId_Editeur($id_editeur) {
+  private function setId_Editeur($id_editeur) {  // private pour que l'on puisse l'utiliser mais pas le modifier
     $this->id_editeur = $id_editeur;
-    }
+  }
 
-    public function setNom_Editeur($nom_editeur) {
-        $this->nom_editeur = $nom_editeur;
-    }
+  public function setNom_Editeur($nom_editeur) {
+    if (is_string($nom_editeur)){
+      $this->nom_editeur = $nom_editeur;
+    } else { echo 'Il faut une chaine de caractères';}
+  }
 
-    public function setLien_Editeur($lien_editeur) {
-        $this->lien_editeur = $lien_editeur;
-    }
+  public function setLien_Editeur($lien_editeur) {
+    if (is_string($lien_editeur)){
+      $this->lien_editeur = $lien_editeur;
+    } else { echo 'Il faut une chaine de caractères';}
+  }
+
+
+
+
 }
 
