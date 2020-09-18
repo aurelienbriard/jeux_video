@@ -49,7 +49,7 @@ public function add(Categorie $categorie){
 		return ($delete_categorie->rowCount());
 	}
 
-	public function getListCategories(){
+	public function getListCategorie(){
 		$list_categorie = $this->pdo->query('SELECT * FROM categorie');
 		return $list_categorie->fetchAll(PDO::FETCH_ASSOC);
 	}

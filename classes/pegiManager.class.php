@@ -49,7 +49,7 @@ public function add(Pegi $pegi){
 		return ($delete_pegi->rowCount());
 	}
 
-	public function getListCategories(){
+	public function getListPegi(){
 		$list_pegi = $this->pdo->query('SELECT * FROM pegi');
 		return $list_pegi->fetchAll(PDO::FETCH_ASSOC);
 	}
