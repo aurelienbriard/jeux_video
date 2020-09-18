@@ -21,7 +21,7 @@
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">Ajout</a>
         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Ajouter un jeux </a>
+          <a class="dropdown-item" href="ajout.php">Ajouter un jeux </a>
           <a class="dropdown-item" href="#">Ajouter un PEGI</a>
           <a class="dropdown-item" href="#">Ajouter une catégorie</a>
           <a class="dropdown-item" href="#">Ajouter une plateforme</a>
