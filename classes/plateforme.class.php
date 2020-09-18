@@ -23,7 +23,7 @@ class Plateforme {
   // ***************************************************************************
 
   // ****************************** Les setters ***********************************
-  private function setId_Plateforme($id_plateforme) { // pour que l'on puisse l'utiliser mais pas le modifier
+  private function setId_Plateforme($id_plateforme) { // private pour que l'on puisse l'utiliser mais pas le modifier
     $this->id_plateforme = $id_plateforme;
   }
 
