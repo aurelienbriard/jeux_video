@@ -36,4 +36,10 @@ class PlateformeManager{
     return ($delete_plateforme-> rowCount() ); // retourne le nbre de lignes
   }
 
+  // méthode pour afficher une liste de plateforme
+  public function getListPlateforme(){
+    $list_plateforme = $this->pdo -> query('SELECT * FROM plateforme;');
+    return $list_plateforme -> fetchAll(PDO::FETCH_ASSOC);
+  }
+
 }

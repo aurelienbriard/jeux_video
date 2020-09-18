@@ -30,8 +30,12 @@
   // 2 - test de la méthode updatePlateforme
   //if( $plateformeManager -> updatePlateforme($plateforme) ) {echo 'plateforme modifiée';} else { echo 'plateforme pas modifiée';}
 
-  // 2 - test de la méthode deletePlateforme
-  if( $plateformeManager -> deletePlateforme($plateforme) ) {echo 'plateforme effacée';} else { echo 'plateforme pas effacée';}
+  // 3 - test de la méthode deletePlateforme
+  //if( $plateformeManager -> deletePlateforme($plateforme) ) {echo 'plateforme effacée';} else { echo 'plateforme pas effacée';}
+
+  // 4 - Afficher une list de plateforme
+  $listPlateforme = $plateformeManager->getListPlateforme();
+  var_dump($listPlateforme);
 
 	?>
 
