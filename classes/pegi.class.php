@@ -21,7 +21,7 @@ class Pegi{
 //Getters
 
 	public function getId_pegi(){return $this->id_pegi;}
-	public function getNom(){return $this->pegi_nom;}
+	public function getPegi_nom(){return $this->pegi_nom;}
 
 //Setters
 
@@ -29,7 +29,7 @@ class Pegi{
 		$this->id_pegi = $id_pegi;
 	}
 	
-	public function setNom($pegi_nom)
+	public function setPegi_nom($pegi_nom)
 	{
 		$this->pegi_nom = $pegi_nom;
 
