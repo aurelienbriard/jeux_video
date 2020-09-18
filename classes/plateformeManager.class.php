@@ -42,4 +42,10 @@ class PlateformeManager{
     return $list_plateforme -> fetchAll(PDO::FETCH_ASSOC);
   }
 
+  // méthode pour récupérer toutes les infos d'1 seule plateforme en fonction de son id
+  public function getPlateformeById(){
+    $getPlateformeById = $this->pdo -> query( 'SELECT * FROM plateforme WHERE id_plateforme = '.$plateforme->getIdPlateforme() );
+    return $getPlateformeById -> fetch(PDO::FETCH_ASSOC);
+  }
+
 }

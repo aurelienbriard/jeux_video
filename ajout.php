@@ -30,7 +30,10 @@
 
 	$managerPegi = new PegiManager($bdd);
 	$pegi_tab = $managerPegi->getListPegi();
-	
+
+	$managerPlateforme = new PlateformeManager($bdd);
+	$plateforme_tab = $managerPlateforme->getListPlateforme();
+
 	?>
 
 	<!-- Default form contact -->
@@ -75,6 +78,16 @@
 			<option value="" disabled>Choisissez un PEGI</option>
 			<?php foreach ($pegi_tab as $key => $value) {  ?>
 				<option value="<?=$value['id_pegi'];?>"><?=$value['pegi_nom'];?></option>
+			<?php }
+			?>
+		</select>
+
+		<!-- PLATEFORME -->
+		<label>PLATEFORME</label>
+		<select class="browser-default custom-select mb-4" name="pegi_id" required>
+			<option value="" disabled>Choisissez une plateforme</option>
+			<?php foreach ($plateforme_tab as $key => $value) {  ?>
+				<option value="<?=$value['id_plateforme'];?>"><?=$value['nom_plateforme'];?></option>
 			<?php }
 			?>
 		</select>
