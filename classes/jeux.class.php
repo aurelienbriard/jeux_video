@@ -2,7 +2,7 @@
 
 class Jeux {
 
-	private $id;
+	private $id_jeux;
 	private $titre;
 	private $description;
 	private $lien;
@@ -23,7 +23,7 @@ class Jeux {
 
  //getters 
 
-    public function getId(){return $this->id;}
+    public function getId_jeux(){return $this->id_jeux;}
     public function getTitre(){return $this->titre;}
     public function getDescription(){return $this->description;}
     public function getLien(){return $this->lien;}
@@ -32,9 +32,9 @@ class Jeux {
     public function getPegi_id(){return $this->pegi_id;}
 //Setters
 
-    private function setId($id)
+    private function setId_jeux($id_jeux)
     {
-        $this->id = $id;
+        $this->id_jeux = $id_jeux;
 
         return $this;
     }
@@ -60,21 +60,21 @@ class Jeux {
         return $this;
     }
 
-    private function setCategorieId($categorie_id)
+    private function setCategorie_Id($categorie_id)
     {
         $this->categorie_id = $categorie_id;
 
         return $this;
     }
 
-    private function setEditeurId($editeur_id)
+    private function setEditeur_Id($editeur_id)
     {
         $this->editeur_id = $editeur_id;
 
         return $this;
     }
 
-    private function setPegiId($pegi_id)
+    private function setPegi_Id($pegi_id)
     {
         $this->pegi_id = $pegi_id;
 
